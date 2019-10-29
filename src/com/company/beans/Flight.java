@@ -3,16 +3,26 @@ package com.company.beans;
 import java.util.ArrayList;
 
 public class Flight {
-	
+
+	private int id;
 	private Plane plane;
 	private Pilot pilot;
 	private ArrayList<Ticket> tickets;
 	private String startAirport;
 	private String destinationAirport;
 	private int cost;
+	private String date;
 	private String startTime;
 	private String destinationTime;
-	
+
+	public void setId(int id){
+		this.id = id;
+	}
+
+	public int getId() {
+		return id;
+	}
+
 	public void setPlane(Plane plane) {
 		this.plane = plane;
 	}
@@ -56,9 +66,17 @@ public class Flight {
 	public void setCost(int cost) {
 		this.cost = cost;
 	}
-	
+
 	public int getCost() {
 		return this.cost;
+	}
+
+	public void setDate(String date) {
+		this.date = date;
+	}
+
+	public String getDate() {
+		return this.date;
 	}
 	
 	public void setStartTime(String startTime) {

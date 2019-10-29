@@ -3,8 +3,14 @@ package com.company.beans;
 public class Plane {
 	
 	private int sitsCount;
-	private int topSpeed;
 	private String model;
+
+	public Plane(){}
+
+	public Plane(String model, int sitsCount){
+		this.model = model;
+		this.sitsCount = sitsCount;
+	}
 	
 	public void setSitsCount(int sitsCount) {
 		this.sitsCount = sitsCount;
@@ -14,15 +20,11 @@ public class Plane {
 		return this.sitsCount;
 	}
 	
-	public void setTopSpeed(int topSpeed) {
-		this.topSpeed = topSpeed;
-	}
-	
-	public int getTopSpeed() {
-		return this.topSpeed;
-	}
-	
 	public void setModel(String model) {
 		this.model = model;
+	}
+
+	public String getModel() {
+		return model;
 	}
 }

@@ -3,7 +3,6 @@ package com.company.beans;
 public class Luggage {
 	
 	private int weight;
-	private int itemsNumber;
 	private Ticket ownerTicket;
 	
 	public void setWeight(int weight) {
@@ -12,14 +11,6 @@ public class Luggage {
 	
 	public int getWeight() {
 		return this.weight;
-	}
-	
-	public void setItemsNumber(int itemsNumber) {
-		this.itemsNumber = itemsNumber;
-	}
-	
-	public int getItemsNumber() {
-		return this.itemsNumber;
 	}
 	
 	public void setOwnerTicket(Ticket ownerTicket) {

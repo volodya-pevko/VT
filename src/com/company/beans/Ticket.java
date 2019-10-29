@@ -3,7 +3,6 @@ package com.company.beans;
 public class Ticket {
 	
 	private Flight flight;
-	private int cost;
 	private int placeNumber;
 	private Client owner;
 	private Luggage luggage;
@@ -14,14 +13,6 @@ public class Ticket {
 	
 	public Flight getFlight() {
 		return this.flight;
-	}
-	
-	public void setCost(int cost) {
-		this.cost = cost;
-	}
-	
-	public int getCost() {
-		return this.cost;
 	}
 	
 	public void setPlaceNumber(int placeNumber) {
@@ -40,8 +31,8 @@ public class Ticket {
 		return this.owner;
 	}
 	
-	public void setLuggage(Flight flight) {
-		this.flight = flight;
+	public void setLuggage(Luggage luggage) {
+		this.luggage = luggage;
 	}
 	
 	public Luggage getLuggage() {
